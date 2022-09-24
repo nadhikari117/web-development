@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .color{
+           height: 400px;
+           width: 400px;
+           background-color: blueviolet;
+       }
+       #d2{
+           height:400px;
+           background-color: aquamarine;
+       }
+      
+.animate {
+  animation: fadeIn 500ms ease-out backwards;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateX(250px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+    </style>
+</head>
+<body>
+        <div class="color"></div>
+        <br>
+         <br>
+        <button onclick="h()"> click here for color change</button>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br><br>
+         <br>
+
+        <img id="image" height="200px" src="https://media.istockphoto.com/photos/green-apple-picture-id584226186?b=1&k=20&m=584226186&s=170667a&w=0&h=jz3JNRjBeSB9oK2cBoGrICZwY0EAe3MzeMhixMrPCD0=" alt="">
+        <br>
+        <br>
+        <button onclick="changeImage()">click to change image</button>
+      
+        <br><br>
+        <br>
+      
+        <p id="para">h
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, sunt. Aliquam sit natus veniam? Voluptatibus soluta inventore pariatur ratione voluptatum dolorum quae, quidem itaque repellat blanditiis quos. Necessitatibus, perspiciatis impedit.
+        </p>
+        <button onclick="hideText()">Click to hide the text
+        </button>
+        <button onclick="showText()">Click to show text</button>
+<br>
+<br>
+<br>
+         <br>
+         <br>
+         <br><br>
+         <br>
+
+<button onclick="rotateImg()">Rotate Image</button>
+<img id="img" src="https://media.istockphoto.com/photos/green-apple-picture-id584226186?b=1&k=20&m=584226186&s=170667a&w=0&h=jz3JNRjBeSB9oK2cBoGrICZwY0EAe3MzeMhixMrPCD0=" />
+
+<div id="d2"></div>
+  <button onclick="animation()">
+    click here to animate
+  </button>
+ 
+    <script src="console.js">
+ 
+    </script>
+</body>
+</html>

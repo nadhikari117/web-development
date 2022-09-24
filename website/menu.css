@@ -1,0 +1,83 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(82, 163, 255, 0.281);
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+.container{
+    background-color: rgb(116, 199, 255)
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(138, 96, 255);
+}
+.row {
+    display: flex;
+
+}
+
+.box {
+    height: 400px;
+    background-color: black;
+    margin: 10px;
+    width: 33.3%;
+    background-size: cover;
+    transition: all 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    text-align: center;
+    color: transparent;
+
+}
+
+.box:hover {
+
+    background-image: none;
+    color: aliceblue;
+   
+}
+
+.b1 {
+    background-image: url(https://th.bing.com/th/id/R.a16237f320334837230ef4fcc5516573?rik=qdszXldbLD4Uqw&pid=ImgRaw&r=0);
+    background-size: cover;
+}
+
+.b2 {
+    background-image: url(https://th.bing.com/th/id/R.5727d2c67f14b8abfd60ebbd76d89cc6?rik=nPNabxrp4An%2bWw&pid=ImgRaw&r=0);
+    background-size: cover;
+}
+
+.b3 {
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-bucatinipasta-045-ls-1607552701.jpg);
+    background-size: cover;
+}
+
+.b4 {
+    background-image: url(https://littlesunnykitchen.com/wp-content/uploads/2020/10/Pesto-Gnocchi-11.jpg);
+    background-size: cover;
+}
+
+.b5 {
+    background-image: url(https://www.ambitiouskitchen.com/wp-content/uploads/2020/02/Classic-Minestrone-Soup-5.jpg);
+    background-size: cover;
+}
+
+.b6 {
+    background-image: url(https://www.modernhoney.com/wp-content/uploads/2019/08/Classic-Lasagna-14-scaled.jpg);
+    background-size: cover;

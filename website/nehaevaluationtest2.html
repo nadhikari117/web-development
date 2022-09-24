@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         #c1{
+            position: static;
+            background-color: crimson;
+            top: 5px;
+            left: 3px;
+            height: 100px;
+            margin: 10px;
+        }
+        #c2{
+            position: relative;
+            background-color: crimson;
+            top: 5px;
+            left: 3px;
+            height: 100px;
+            margin: 10px;
+        }
+        #c3{
+           
+            position: fixed;
+            background-color: crimson;
+            top: 5px;
+            left: 3px;
+            height: 100px;
+            margin: 10px;
+        }
+      
+        #c4{
+            position: sticky;
+            background-color: crimson;
+            top: 5px;
+            left: 3px;
+            height: 100px;
+            margin: 10px;
+        }
+        #c5{
+           
+            position: absolute;
+            background-color: crimson;
+            top: 5px;
+            left: 3px;
+            height: 100px;
+            margin: 10px;
+        }
+       .d1{
+            height: 300px;
+            width: 300px;
+            background-color: tomato;
+         }
+        div:hover{
+            height: 300px;
+            width: 300px;
+            transition: 3s;
+            transform: rotate(180);
+            background-color: cyan;
+
+       }
+       #ryuk{
+            animation-name: ryuk;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            height: 700px;
+            transform: rotateY(180deg);
+            position:absolute;
+        }
+
+        @keyframes ryuk{
+            from{
+                left: 1000px;
+                transform: rotateY(180deg);
+            }
+            to{
+                left: 50px;
+                transform: rotateZ(50deg);
+            }
+        }
+        #shrek{
+            animation-name: shrek;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            
+        }
+       @keyframes shrek{
+        from{
+                left: 1000px;
+                transform: rotateY(0deg);
+            }
+            to{
+                left: 50px;
+                transform: rotateY(360deg);
+            }
+       }
+#div{
+    height: 300px;
+    width: 350px;
+    background-color: blue;
+    animation-name: div;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes div{
+    from{
+                left: 100px;
+                transform: rotateY(180deg);
+            }
+            to{
+                left: 50px;
+                transform: rotateZ(110deg);
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  <p>1.)  5 CSS Positions: absolute, fixed, sticky, relative, static.
+      <br>
+      <br>
+      
+      <div class="c" id="c1"></div>
+      <div class="c" id="c2"></div>
+      <div class="c" id="c3"></div>
+      <div class="c" id="c4"></div>
+      <div class="c" id="c5"></div>
+<br>
+<br>
+<br>
+2.) 
+<br>
+<br>
+<br>
+4.)
+<div id="div"></div>
+<br>
+<br>
+<br><br>
+<br>
+5.)  
+ <img id= "ryuk" src="https://www.pngkey.com/png/full/53-531175_death-note-ryuk-png-banner-black-and-white.png">
+<br>
+<br>
+<br> 
+<br>
+<br>
+<br>
+6.) Transition Values: transition delay, transition timing function, transition duration.
+<br>
+<br>
+<br>
+7.) Transform Values: rotate, translate, skew, scale, matrix.
+<br>
+<br>
+<br>
+9.) You can use colorwheel to choose colors for your website. Primary, secondary and tertiary can be used.
+<br>
+<br>
+<br>
+10.) <img id= "shrek" src="https://www.bing.com/images/blob?bcid=Tl3QYhfexJcDqxcxoNWLuD9SqbotqVTdP60">
+  </p>
+</body>
+</html>

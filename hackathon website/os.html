@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+        * {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(82, 163, 255, 0.281);
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+        .containers {
+            background-color: rgb(255, 255, 255)
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: rgb(138, 96, 255);
+        }
+
+        .rows {
+            display: flex;
+
+        }
+
+        .box {
+            height: 321px;
+            width: 205px;
+            background-color: rgb(109, 167, 172);
+            margin: 30px;
+            width: 28%;
+            background-size: cover;
+            transition: all 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            text-align: center;
+            color: transparent;
+
+
+        }
+
+        .box:hover {
+
+            background-image: none;
+            color: aliceblue;
+
+        }
+
+        .b1 {
+            background-image: url(https://img1.ak.crunchyroll.com/i/spire3/dac363972d628a7009e04fdeb9d7104a1641869274_main.jpg);
+            background-size: cover;
+            margin-left: 10%;
+
+        }
+
+        .b2 {
+            background-image: url(https://image.api.playstation.com/cdn/UP0700/CUSA04897_00/9KyMrO6GjTtcrj1lC0aBENsrJroVszez.png);
+            background-size: cover;
+        }
+
+        .b3 {
+            background-image: url(https://i.pinimg.com/originals/9e/84/df/9e84dfb84672c2c7e5252e9c9118d2e7.png);
+            background-size: cover;
+
+        }
+
+        .b4 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BODcwNWE3OTMtMDc3MS00NDFjLWE1OTAtNDU3NjgxODMxY2UyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+        .b5 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg);
+            background-size: cover;
+            margin-left: 10%;
+        }
+
+        .b6 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BMGMyOThiMGUtYmFmZi00YWM0LWJiM2QtZGMwM2Q2ODE4MzhhXkEyXkFqcGdeQXVyMjc2Nzg5OTQ@._V1_.jpg);
+            background-size: cover;
+        }
+
+        .b7 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/7/72/Bleachanime.png);
+            background-size: cover;
+        }
+
+        .b8 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/e/e1/FairyTail-Volume_1_Cover.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+        .b9 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BZmUzMThjOTItZGY4ZS00ODcwLTliNTMtYjVkM2JmY2QxNmRhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg);
+            background-size: cover;
+            margin-left: 10%;
+        }
+
+        .b10 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BMmRhZDI4ODItYTAzMC00NWQ1LTk1MTctZWYyMDY3ZTU3NWFiXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg);
+            background-size: cover;
+        }
+
+        .b11 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BYzZmNWJmMjctNTFhMy00MDZhLThiZTgtMjU5YmI2OTE2MGRkXkEyXkFqcGdeQXVyMzI2Mjc1NjQ@._V1_.jpg);
+            background-size: cover;
+            border: 2px;
+            border-color: black;
+        }
+
+        .b12 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/2/23/Angel_Beats%21_game_cover.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+        .b13 {
+            background-image: url(https://cdn.myanimelist.net/images/anime/3/67177.jpg);
+            background-size: cover;
+            margin-left: 10%;
+        }
+
+        .b14 {
+            background-image: url(https://img1.ak.crunchyroll.com/i/spire4/2ed7860327c766f1cad10c73338a61a91617747114_full.jpg);
+            background-size: cover;
+        }
+
+        .b15 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BN2VmM2NmMGUtOGQ2OC00Y2ZjLTljNTctYjhmMDJjZjM1NTY3XkEyXkFqcGdeQXVyNDgyODgxNjE@._V1_.jpg);
+            background-size: cover;
+
+        }
+
+        .b16 {
+            background-image: url(https://i.pinimg.com/474x/b7/4f/39/b74f3901d3154bc1b77b4a3d9a75c8f4.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+
+
+
+        .b17 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/4/4a/Berserk_vol01.png);
+
+            background-size: cover;
+            margin-left: 10%;
+        }
+
+        .b18 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BMTNmZDE2NDEtNTg3MS00OTE1LThlZGUtOGZkZTg0NTUyNGVmXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg);
+            background-size: cover;
+        }
+
+        .b19 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/a/a8/Kingdom_volume_1.jpg);
+            background-size: cover;
+
+        }
+
+        .b20 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/5/51/Vinland_Saga_volume_01_cover.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+        .b21 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BNTk1NTc0MTYtY2IyNC00OWVjLWJhYWItNDQ0ODdiNWZkYTA5XkEyXkFqcGdeQXVyMTQ3MjMyMTYz._V1_FMjpg_UX1000_.jpg);
+
+            background-size: cover;
+            margin-left: 10%;
+        }
+        .b22 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BZmEzN2YzOTItMDI5MS00MGU4LWI1NWQtOTg5ZThhNGQwYTEzXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg);
+            background-size: cover;
+        }
+
+        .b23 {
+            background-image: url(https://img1.ak.crunchyroll.com/i/spire3/dac363972d628a7009e04fdeb9d7104a1641869274_main.jpg);
+            background-size: cover;
+
+        }
+
+        .b24 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+        .b25 {
+            background-image: url(https://img1.ak.crunchyroll.com/i/spire3/501db6b69ced79e79a556b20cbdb9c5d1609784936_full.jpg);
+
+            background-size: cover;
+            margin-left: 10%;
+        }
+
+        .b26 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BY2IyMDA0NGEtZjIyOS00NjU0LThlOTctODA0OTZmMDU2ZTMxXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg);
+            background-size: cover;
+        }
+
+        .b27 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BM2VmODMyZTUtOWFkNC00OGI5LTg5NjEtMjFiMjU0MDQxMDcyXkEyXkFqcGdeQXVyMTI2NTY3NDg5._V1_FMjpg_UX1000_.jpg);
+            background-size: cover;
+
+        }
+
+        .b28 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BOTI4YWNlNzMtNWU3Yi00OTBmLWEyOTYtZjAyYTM5NWZkMWM4XkEyXkFqcGdeQXVyMTI2NTY3NDg5._V1_.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: black;
+        }
+
+        .rows {
+            background-color: rgb(177, 159, 241);
+        }
+
+        h1 {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            padding: 200px;
+            font-size: 55px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            color: antiquewhite;
+
+        }
+
+        h2 {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+        }
+
+        body {
+            background-color: rgb(161, 219, 210);
+        }
+
+        @media all and (max-width:990px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+    .rows{
+        flex-direction: column;
+    }
+}
+        p {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+    </style>
+</head>
+
+<body>
+    <section class="showcase">
+        <nav class="menu">
+
+
+
+
+
+            <a href="#shounen">Adventure</a>
+            <a href="#shoujo">Drama</a>
+            <a href="#seinen">Action</a>
+            <a href="#josei">Romance</a>
+            <a href="#fantasy">Fantasy</a>
+
+
+        </nav>
+
+    </section>
+
+    <center>
+        <h1>Struggling with what to watch next? Here's some of AniManga Mania's top selections!</h1>
+    </center>
+
+    <section class="containers">
+        <br>
+        <br>
+        <br>
+        <h2 id="shounen">If You Like Adventure...</h2>
+        <br>
+        <center>
+            <p>Watch Attack On Titan, Jojo's Bizzare Adventure, Hunter X Hunter, One Piece, Naruto, DragonBall, Bleach, Fairytail
+            </p>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="rows">
+            <div class="box b1">
+                Witnessing the fullness of the Titan horror first-hand, a young and tenacious Eren Jaeger vows to rid
+                the world of all Titans and win back freedom for mankind.
+
+            </div>
+
+            <div class="box b2">
+                The story of the Joestar family, who are possessed with intense psychic strength, and the adventures
+                each member encounters throughout their lives.
+
+            </div>
+            <div class="box b3">
+                Gon Freecss aspires to become a Hunter, an exceptional being capable of greatness. With his friends and
+                his potential, he seeks for his father who left him when he was younger.
+            </div>
+            <div class="box b4">
+                The series focuses on Monkey D. Luffy, whom, inspired by his childhood idol, the powerful pirate
+                Red-Haired Shanks, sets off on a journey to find the mythical treasure, the One Piece, and proclaim
+                himself the King of the Pirates.
+
+            </div>
+
+            <br>
+
+
+        </div>
+
+
+        <div class="rows">
+            <div class="box b5">The story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and
+                dreams of becoming the Hokage, the leader of his village.</div>
+            <div class="box b6">Follows the adventures of an extraordinarily strong young boy named Goku as he searches
+                for the seven dragon balls. Along the way he makes many new friends, and enemies, and he trains to
+                become the strongest fighter in the world.</div>
+            <div class="box b7">It follows the adventures of the hotheaded teenager Ichigo Kurosaki, who inherits his
+                parents' destiny after he obtains the powers of a Soul Reaper—a death personification similar to the
+                Grim Reaper—from another Soul Reaper, Rukia Kuchiki.</div>
+            <div class="box b8">Lucy, a 17 year old girl, sets out on journey to become a full-fledged wizard and joins the strongest and most (in) famous guild FAIRY TAIL where she meets Natsu, Happy, Gray and Erza, who treat her more like family than friends.</div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h2 id="shoujo">If You Like Drama...</h2>
+        <br>
+        <center>
+            <p>Watch Violet Evergarden, Kakegurui, Banana Fish, Angel Beats! </p>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="rows">
+            <div class="box b9">In the aftermath of a great war, Violet Evergarden, a young female ex-soldier, gets a job at a writers' agency and goes on assignments to create letters that can connect people</div>
+            <div class="box b10">A teen uses her gambling skills to try and take down the student council president at an elite private academy.
+            </div>
+            <div class="box b11">A teenaged gang leader in New York City faces his abuser and rival gangs alongside a photojournalist from Japan as they investigate a deadly new drug. </div>
+            <div class="box b12">Angel Beats! is set in the environment of a high school in the afterlife, a type of limbo for people who have experienced trauma or hardships in life and must overcome them before passing on and being reincarnated.</div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2 id="josei">If You Like Romance...</h2>
+        <br>
+        <center>
+            <p>Watch Your Lie In April, Fruits Basket, Clannad, Ouran High School Host Club</p>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="rows">
+            <div class="box b13">Kousei Arima, a piano prodigy who lost his ability to play after suffering a traumatic
+                event in his childhood is forced back into the spotlight by an eccentric girl with a secret of her own.
+            </div>
+            <div class="box b14">Tohru Honda, an orphan girl who, after meeting Yuki, Kyo, and Shigure Sohma, learns that
+                thirteen members of the Sohma family are possessed by the animals of the Chinese zodiac and are cursed
+                to turn into their animal forms if they embrace anyone of the opposite sex. </div>
+            <div class="box b15">The story follows the life of Tomoya Okazaki, from adolescence to adulthood. As an average high school student, he meets many people in his last year at school, including five girls whose individual problems he helps resolve, and his life is further detailed after graduating from high school.</div>
+            <div class="box b16">When Haruhi accidentally breaks an expensive vase belonging to the wacky Host Club, she is made to serve under them until her debt is paid off.</div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2 id="seinen">If You Like Action...</h2>
+        <br>
+        <center>
+            <p>Watch Berserk, Kingdom, Vinland Saga, One Punch Man, MHA, FMA, Attack On Titan, Naruto</p>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="rows">
+            <div class="box b17">Set in a medieval dark fantasy world, the story centers on the characters of Guts, a
+                lone mercenary, and Griffith, the leader of a mercenary band called the "Band of the Hawk".</div>
+            <div class="box b19">Kingdom provides a fictionalized account of the Warring States period primarily through
+                the experiences of the war orphan Xin and his comrades as he fights to become the greatest general under
+                the heavens, and in doing so, unifying China for the first time in 500 years.</div>
+            <div class="box b18">Saitama, a superhero who can defeat any opponent with a single punch but seeks to find a worthy opponent after growing bored by a lack of challenge due to his overwhelming strength. </div>
+            <div class="box b20">Thorfinn pursues a journey with his father's killer in order to take revenge and end
+                his life in a duel as an honorable warrior and pay his father a homage.</div>
+
+        </div>
+
+        <div class="rows">
+            <div class="box b21">The series focuses on a middle school student Izuku Midoriya, who has no superpowers. Will he be able to become a hero and somehow to contribute to the peace and stability in the world, where the weak is the minority that needs to be defended.</div>
+            <div class="box b22">When a failed alchemical ritual leaves brothers Edward and Alphonse Elric with severely damaged bodies, they begin searching for the one thing that can save them: the fabled philosopher's stone.</div>
+            <div class="box b23">   Witnessing the fullness of the Titan horror first-hand, a young and tenacious Eren Jaeger vows to rid
+                the world of all Titans and win back freedom for mankind.</div>
+
+            <div class="box b24">The story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and
+                dreams of becoming the Hokage, the leader of his village.</div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2 id="fantasy">If You Like Fantasy...</h2>
+        <br>
+        <center>
+            <p>Watch Black Clover, Fire Force, The Seven Deadly Sins, Dr. Stone</p>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="rows">
+            <div class="box b25">The series focuses on Asta, a young orphan who is left to be raised in an orphanage alongside his fellow orphan, Yuno.</div>
+            <div class="box b26">A mysterious phenomenon stripped the humanity of the right to have a quiet life, with hopes and dreams. </div>
+            <div class="box b27">The story of the Seven Deadly Sins, a group of warriors who were wrongly accused of a crime they didn't commit and went on a quest to vindicate themselves.</div>
+
+            <div class="box b28">This manga tells the story of how some people from the Pre-Petrification World try to rebuild civilization in the Petrification Age, the Stone World.</div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#ab.">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">more</a></li>
+                        <li><a href="#">login</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">help center</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">mangas</a></li>
+                        <li><a href="#">posters</a></li>
+                        <li><a href="#">clothes</a></li>
+                        <li><a href="#">accesories</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+
+                  
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

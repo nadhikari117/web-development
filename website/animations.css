@@ -1,0 +1,29 @@
+@keyframes ChangeBgColor{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: black;
+    }
+}
+body{
+    animation-name: ChangeBgColor;
+    animation-duration: 5s;
+    animation-delay: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes MoveCar{
+    from{
+        transform: translate(1px,1px);
+    }
+    to{
+        transform:translate(900px,0px);
+    }
+}
+img{
+    animation-name: MoveCar;
+    animation-duration: 0.5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+}

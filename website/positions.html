@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        Position:
+        1.) static
+        > by static
+        > top, bottom, right, left are not going to affect static
+        > Follows document flow (one after other)
+        Position absolute is top, bottom, left right from the window is the parent is not static.
+Relative doesn't care about other elements.
+top, left from parent
+Fixed: always fixed to a particular position from top, left from the window
+Even if you are scrolling it will be at the specific fixed position
+Sticky is a combo of fixed and relative
+a position of top, left
+
+        */
+
+        #parent {
+            height: 400px;
+            background-color: cornflowerblue;
+            margin: 100px;
+            
+        }
+
+        .c {
+            height: 80px;
+            width: 100px;
+            background-color: cornsilk;
+            margin: 10px;
+        }
+        #c1{
+            position: static;
+            top: 500px;
+            left: 1000px;
+        }
+        #c2{
+            position: relative;
+            background-color: crimson;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div class="c" id="c1">static</div>
+        <div class="c" id="c2">Child 2</div>
+        <div class="c" id="c3">Child 3</div>
+        <div class="c" id="c4">Child 4</div>
+
+        
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,700;1,100&family=Shippori+Antique+B1&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Shippori Antique B1', sans-serif;
+            background-color: #D5D5D5;
+
+        }
+
+        section {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 80px;
+            text-align: center;
+            color: #091353;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            background-color: #9D84B7;
+            margin: 10px auto;
+            width: 300px;
+        }
+
+        .cell {
+            height: 100px;
+            width: 100px;
+            background-color: #091353;
+            line-height: 100px;
+            box-shadow: 2px 2px 2px 2px cadetblue;
+            border: 2px solid cadetblue;
+            cursor: pointer;
+            font-size: 60px;
+            color: #D5D5D5;
+        }
+
+        .status {
+            font-size: 50px;
+            color: #091353;
+            margin: 20px auto;
+        }
+
+        .restart {
+            background-color: #D5D5D5;
+            width: 200px;
+            height: 50px;
+            font-size: 25px;
+            color: #091353;
+            box-shadow: 2px 2px 2px 2px cadetblue;
+            border: 2px solid cadetblue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1 class="title">Tic Tac Toe</h1>
+        <div class="container">
+            <div class="cell one" onclick="play1()"></div>
+            <div class="cell two" onclick="play2()"></div>
+            <div class="cell three" onclick="play3()"></div>
+            <div class="cell four" onclick="play4()"></div>
+            <div class="cell five" onclick="play5()"></div>
+            <div class="cell six" onclick="play6()"></div>
+            <div class="cell seven" onclick="play7()"></div>
+            <div class="cell eight" onclick="play8()"></div>
+            <div class="cell nine" onclick="play9()"></div>
+        </div>
+        <h2 class="status"></h2>
+        <button class="restart" onclick="reset()">Restart game!</button>
+
+
+    </section>
+   
+</body>
+
+</html>

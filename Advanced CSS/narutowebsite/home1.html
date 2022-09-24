@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+        * {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+            position: fixed;
+            top:0;
+            right:0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: black;
+        }
+        .showcase{
+            width: 100%;
+            min-height: 100vh;
+            background-color: cadetblue;
+            position: absolute;
+            right:0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index:2;
+         
+        }
+        video{
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            object-fit: cover;
+
+        }
+        .text{
+            z-index:10;
+            padding:50px;
+        }
+        .text h1{
+            font-size: 5em;
+            text-transform: uppercase;
+        }
+        .text h2{
+            font-size: 4em;
+            text-transform: uppercase;
+        }
+        .text a{
+            text-decoration:none;
+            text-transform: uppercase;
+            background-color: white;
+            color:black;
+            padding:10px 30px;
+            transition: all 1s;
+        }
+        .text a:hover{
+            letter-spacing: 6px;
+        }
+        .social{
+            z-index:10;
+            position: absolute;
+            bottom:20px;
+        }
+        .social li{
+            list-style: none;
+            display:inline;
+        }
+        .social a{
+            color:black;
+            margin:10px;
+        }
+
+
+        
+
+    </style>
+</head>
+
+<body>
+    <section class="showcase">
+        <nav class="menu">
+            <h2 class="logo">CHEESE</h2>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="">Contact</a>
+        </nav>
+         <video src="video.mp4" muted autoplay loop></video>
+        <div class="text">
+            <h1>Cheese</h1>
+            <h2>is amazing!</h2>
+            <p>Cheese is a dairy product and produced in wide ranges of flavors, textures and forms by coagulation of
+                the milk protein casein. It comprises proteins and fat from milk, usually the milk of cows, buffalo,
+                goats, or sheep. During production, the milk is usually acidified and the enzymes of either rennet or
+                bacterial enzymes with similar activity are added to cause the casein to coagulate. </p>
+                <br>
+                <br>
+            <a href="">Let's eat!</a>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook fa-2x"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter fa-2x"></i></a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

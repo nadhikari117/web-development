@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+* {
+            margin: 0;
+        }
+
+        nav {
+            background-color: black;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            font: size 20px;
+        }
+
+        @media all and (max-width:600px) {
+            nav a {
+                display: block;
+                font-size: 15px;
+            }
+
+            nav {
+                background-color: black;
+            }
+        }
+
+
+img{
+            height: 400px;
+            width: 400px;
+        }
+        img:nth-child(1){
+            filter: blur(30px);
+        }
+        img:nth-child(2){
+            filter: brightness(100%);
+        }
+        img:nth-child(3){
+            filter: contrast(50%);
+        }
+        img:nth-child(4){
+            filter: grayscale(20%);
+        }
+        img:nth-child(5){
+            filter: opacity(30%);
+        }
+
+        :root{
+            --color1: #9D5353;
+        }
+        .a1{
+    background-color:var(--color1);
+height: 500px;
+width: 500px;
+} 
+
+.absolute{
+    height: 10px;
+    width: 20px;
+    background-image: blue;
+}
+.relative1{
+    height: 10ex;
+    width: 20ex;
+    background-color: blue;
+}
+.relative2{
+    height: 10vh;
+    width: 20vh;
+    background-color: blue;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <br>
+    1) Design a responsive nav bar using media queries.
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Gallery</a>
+        <a href="">More</a>
+        <a href="">More1</a>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p> 2) Put 5 images give them the filters blur(30px), grayscale (20%), brightness (100%), contrast (50%) and opacity (30%) respectively.</p>
+    <img src="https://th.bing.com/th/id/OIP.MBmZIpF7k718IrhO9rXivgHaEL?pid=ImgDet&rs=1" alt="">
+    <img src="https://th.bing.com/th/id/OIP.n_CQTHRbeNZD_bP_zVa0NwHaH3?pid=ImgDet&rs=1" alt="">
+    <img src="https://i1.sndcdn.com/avatars-XVgzljUAz4VHIddz-CcxmFw-t240x240.jpg" alt="">
+    <img src="https://th.bing.com/th/id/OIP.CRzYQB-em8zeDO1GxjnvPwHaGa?pid=ImgDet&rs=1" alt="">
+    <img src="https://th.bing.com/th/id/OIP.tgZPWmK1vkYqjJRKr2xaaQHaHa?pid=ImgDet&rs=1" alt="">
+
+
+<br>
+<br>
+<br>
+    <p>3) Name 1 absolute and 2 relative CSS units: (absolute: px) (relative: rem, vh) </p>
+    <br>
+    <br>
+    <br>
+    <p>4) Make 3 divs with one absolute and two relative.</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="absolute"></div>
+    <br>
+    <br>
+<div class="relative1"></div>
+<br>
+<br>
+<div class="relative2"></div>
+<br>
+<br>
+<br>
+   <p>5) Variables are containers that store values inside. </p>
+    <div class="a1"></div>
+</body>
+</html>

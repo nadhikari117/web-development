@@ -1,0 +1,30 @@
+.col{
+background-color: cornflowerblue;
+height: 400px;
+width: 33%;
+margin: 2rem;
+justify-content: center;
+padding: 0.7rem;
+}
+.row{
+    display: flex;
+
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+section{
+    background-color: darkblue;
+}
+@media all and (max-width: 990px){
+    .col{
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+    .row{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(144, 188, 238, 0.281);
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(165, 228, 237);
+}
+
+
+@media all and (max-width:600px) {
+    menu a {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+
+    menu {
+        background-color: black;
+        position: fixed;
+    }
+@media all and (max-width:600px) {
+    .d1{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+}
+.s1 {
+    height: 800px;
+    background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2015/06/11/719776/a0de9cfec35bb5b714baab15b427c746-700.jpg);
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: rgb(249, 219, 121);
+    align-items: center;
+    background-attachment: fixed;
+}

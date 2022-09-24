@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+           background-image: url(https://assets.entrepreneur.com/content/3x2/2000/20150115183825-books-reading.jpeg?auto=webp&quality=95&crop=16:9&width=675); color: white;
+           background-repeat: no-repeat;
+           background-size: cover;
+       }
+       .container{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+       }
+       table{
+           height: 130px;
+           background-color: lightpink;
+       }
+       button{
+           height: 50px;
+           width: 200px;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    
+    <h1>Result Generator</h1>
+    <table border="1">
+       
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="4">Score</th>
+        </tr>
+        <tr>
+            <th>English</th>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>History</th>
+        </tr>
+        <tr>
+            <td>
+                <input id="name" type="text" name="" >
+            </td>
+            <td>
+                <input type="text" name="" id="eng">
+            </td>
+            <td>
+                <input type="text" name="" id="maths">
+            </td>
+            <td>
+                <input type="text" name="" id="sci">
+            </td>
+            <td>
+                <input type="text" name="" id="his">
+            </td>
+
+
+
+
+        </tr>
+    </table>
+    <button onclick="result()">Submit</button>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Percentage</th>
+            <th>Grade</th>
+            <th>Pass/Fail</th>
+        </tr>
+        <tr>
+            <td id="Name">
+               
+            </td>
+            <td id="Percentage">
+               
+            </td>
+            <td id="grade">
+               
+            </td>
+            <td id="pass">
+               
+            </td>
+
+        </tr>
+    </table>
+    <script src="report.js"></script>
+</div>
+</body>
+
+</html>

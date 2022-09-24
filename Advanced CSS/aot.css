@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(48, 253, 219, 0.281);
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    border: 2px solid white;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(165, 228, 237);
+}
+
+
+@media all and (max-width:600px) {
+    menu a {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+
+    menu {
+        background-color: black;
+        position: fixed;
+    }
+}
+.row {
+    display: flex;
+
+}
+
+.box {
+    height: 400px;
+    background-color: rgb(139, 181, 245);
+    margin: 10px;
+    width: 33.3%;
+    background-size: cover;
+    transition: all 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    text-align: center;
+    color: transparent;
+
+}
+
+.box:hover {
+
+    background-image: none;
+    color: aliceblue;
+   
+}
+
+.b1{
+    background-image: url(https://picfiles.alphacoders.com/254/thumb-254136.png);
+    background-size: cover;
+}
+
+.b2 {
+    background-image: url(https://66.media.tumblr.com/b851f6951d2febf698d288c62c5e1521/tumblr_ptz5nmucwn1x0tyluo1_500.png);
+    background-size: cover;
+}
+
+.b3 {
+    background-image: url(https://pbs.twimg.com/profile_images/1333205538268721153/lzqnoHnJ_400x400.jpg);
+    background-size: cover;
+}
+
+.b4 {
+    background-image: url(https://pbs.twimg.com/profile_images/1351186156885585923/j6SEv1Av_400x400.jpg);
+    background-size: cover;
+}
+
+.b5 {
+    background-image: url(https://i.pinimg.com/originals/06/0a/01/060a0126ccb800b924fe281c30f762d4.png);
+    background-size: cover;
+}
+
+.b6 {
+    background-image: url(https://animesher.com/orig/0/92/920/9209/animesher.com_attack-on-titan-jean-kirstein-jean-920977.jpg);
+    background-size: cover;
+
+}
+@media all and (max-width:990px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+h1 {
+    text-align: center;
+    padding: 65px;
+   font-size: 60px;
+    animation: hello 2s forwards;
+    
+
+}
+.container{
+    background-color: lightblue;
+}
+
+.button{
+    height: 50px;
+    width: 90px;
+    color: rgb(190, 164, 250);
+    
+}
+.row{
+    padding-right: 30px;
+}
+
+body {
+    background-color: rgb(109, 168, 207);
+    color: white;
+} 
+@keyframes hello{
+    0% {
+        transform: rotate(120deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}

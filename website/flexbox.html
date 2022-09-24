@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.flex-container{
+    background-color: rgb(0, 0, 0); height: 600px;
+    display: flex;
+    /*it's gonna make the flex-container a flexbox*/
+    /*flex-direction: row-reverse;*/
+    /*it decides the direction of the elements inside it*/
+    /*row, column, row-reverse,
+    column-reverse*/
+    /*flex-wrap: row wrap;*/
+    /*wrap, row wrap, nowrap, wrap-reverse*/
+    /*justify-content: space-between;*/
+    align-items: flex-end;
+    /*where should the content be horizontally?*/ 
+    /*center, flex-start, flex-end,
+    space-around, space-between*/
+}
+.d{
+    background-color: aliceblue;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+</style>
+<body>
+
+    <div class="flex-container"> 
+    <div class="d">1</div>
+    <div class="d">2</div>
+    <div class="d">3</div>
+    <div class="d">4</div>
+    <div class="d">5</div>
+    <div class="d">6</div>
+    <div class="d">7</div>
+    <div class="d">8</div>
+    <div class="d">9</div>
+</div>
+
+</body>
+</html>

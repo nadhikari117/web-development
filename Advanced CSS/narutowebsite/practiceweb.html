@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practiceweb.css">
+    <style>
+        * {
+            margin: 0px;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 700px;
+            width: 1300px;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        
+        #y {
+            height: 400px;
+            width: 40%;
+            background-color: white;
+            justify-content: center;
+            padding: 1.5rem;
+            align-items: center;
+            justify-items: center;
+            flex-direction: column;
+
+        }
+
+        section {
+            background-color: rgb(0, 38, 151);
+            height: 100%;
+            width: 100%;
+        }
+
+        .row{
+            display: flex;
+        }
+        h1 {
+            color: rgb(255, 60, 60);
+            font-size: 40px;
+        }
+
+        @media all and (max-width: 990px){
+    .col{
+        width: 100%;
+        margin: 1rem 0rem;
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+
+        #x {
+            background-image: url(https://lh3.googleusercontent.com/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc=w600);
+            height: 400px;
+            width: 40%;
+            justify-content: center;
+            padding: 1.5rem;
+            align-items: center;
+            justify-items: center;
+            flex-direction: column;
+            background-color: rgb(255, 60, 60);
+        }
+
+        .freepik {
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        button {
+            height: 45px;
+            width: 110px;
+            color: white;
+            background-color: rgb(1, 1, 90);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+            <div class="col" id="x">
+
+            </div>
+            <div class="col" id="y">
+                <center>
+                    <h1>Websites.
+                        <br>
+                        Applications.
+                        <br>
+                        Brands.
+                    </h1>
+                </center>
+                <br>
+                <br>
+                <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis
+                    suscipit ultrices.</p>
+                <br>
+                <br>
+                <p class="freepik"> Image from
+                    <u>Freepik</u>
+                </p>
+
+                <br>
+                <br>
+                <center><button type="button">learn more</button></center>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>

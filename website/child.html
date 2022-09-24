@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: black;
+            height: 400px;
+            width: 1400px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box div {
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            margin: 10px;
+        }
+
+        .box div:nth-child(1):hover {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-bottom-color: red;
+            position: relative;
+            top: -50px;
+        }
+
+        .box div:nth-child(2):hover {
+            width: 200px;
+            height: 100px;
+            background: red;
+
+        }
+
+        .box div:nth-child(3):hover {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%
+        }
+
+        .box div:nth-child(4):hover {
+            width: 200px;
+            height: 100px;
+            background: red;
+            border-radius: 100px / 50px;
+        }
+
+        .box div:nth-child(5):hover {
+            width: 0;
+            height: 0;
+            border-top: 50px solid transparent;
+          
+            height: 0;
+            border-top: 50px solid transparent;
+            border-right: 100px solid red;
+            border-bottom: 50px solid transparent;
+           
+            border-bottom: 50px solid transparent;
+        }
+    </style>
+</head>
+
+<body></body>
+<div class="box">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</div>
+</body>
+
+</html>

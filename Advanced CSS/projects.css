@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(144, 188, 238, 0.281);
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    border: 2px solid white;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(165, 228, 237);
+}
+
+
+@media all and (max-width:600px) {
+    menu a {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+
+    menu {
+        background-color: black;
+        position: fixed;
+    }
+}
+.row {
+    display: flex;
+
+}
+
+.box {
+    height: 400px;
+    background-color: rgb(139, 181, 245);
+    margin: 10px;
+    width: 33.3%;
+    background-size: cover;
+    transition: all 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    text-align: center;
+    color: transparent;
+
+}
+
+.box:hover {
+
+    background-image: none;
+    color: aliceblue;
+   
+}
+
+.b1{
+    background-image: url(https://manga.tokyo/wp-content/uploads/2016/05/1920x1280.jpg);
+    background-size: cover;
+}
+
+.b2 {
+    background-image: url(https://animenomi.b-cdn.net/wp-content/uploads/2021/01/hand-picked-naruto-uzumaki-anime-quotes-featured-image-1024x536.jpg);
+    background-size: cover;
+}
+
+.b3 {
+    background-image: url(https://s3.amazonaws.com/AOTOURISMCOM/db/responsive_restaurants/17259/images/lgdisplay/juicebar2.jpg);
+    background-size: cover;
+}
+
+.b4 {
+    background-image: url(https://static0.cbrimages.com/wordpress/wp-content/uploads/2021/11/death-note-light.jpg);
+    background-size: cover;
+}
+
+.b5 {
+    background-image: url(https://post.healthline.com/wp-content/uploads/2020/09/chamomile-tea-thumb-1-732x549.jpg);
+    background-size: cover;
+}
+
+.b6 {
+    background-image: url(https://ih1.redbubble.net/image.1952423375.0488/st,small,507x507-pad,600x600,f8f8f8.jpg);
+    background-size: cover;
+
+}
+@media all and (max-width:990px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+h1 {
+    text-align: center;
+    padding: 65px;
+   font-size: 60px;
+    animation: hello 2s forwards;
+    
+
+}
+.container{
+    background-color: lightblue;
+}
+
+.button{
+    height: 50px;
+    width: 90px;
+    color: rgb(190, 164, 250);
+    
+}
+.row{
+    padding-right: 30px;
+}
+
+body {
+    background-color: rgb(187, 222, 255);
+    color: white;
+} 
+@keyframes hello{
+    0% {
+        transform: rotate(120deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}

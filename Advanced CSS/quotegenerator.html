@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <style>
+    body,html{
+        background-image: url("https://c.tenor.com/MiiSaoOtKHgAAAAC/black-background.gif");
+        background-size: cover;
+        background-repeat: repeat;
+    }
+    #para{
+        font-size: 2rem;
+        text-shadow: rgba(0,238,255,0.9) 0px 0px 39px;
+
+    }
+    button{
+        border:2px solid white;
+        padding: 1.5rem 4rem;
+        border-radius: 40%;
+        font-size:1.5rem;
+        color: aliceblue;
+        transition: all 1s;
+        background-color: black;
+        margin:1rem;
+    }
+
+    button:hover{
+background-color: aliceblue;
+color: black;
+    }
+  </style>
+  <body class="bg-dark">
+
+    <h1 class="text-center text-light p-5">Random Quote Generator App</h1>
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col"></div>
+            
+            <div class="col-8">
+                <center><p id="para" class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odit. Tenetur esse adipisci unde commodi ab dolorum quo praesentium, vel, explicabo temporibus dolorem consequatur aliquam nulla nesciunt architecto atque distinctio?</p></center>
+               <center><button onclick="generateQuote()">Get New Quote</button></center> 
+
+            </div>
+            <div class="col"></div>
+
+        </div>
+    </div>
+    <script src="quotegenerator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

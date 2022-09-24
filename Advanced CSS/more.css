@@ -1,0 +1,99 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(144, 188, 238, 0.281);
+    color: white;
+    text-align: center;
+   padding: 30px 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+  border: 2px solid white;
+
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(165, 228, 237);
+}
+
+
+@media all and (max-width:600px) {
+    menu a {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+
+    menu {
+        background-color: black;
+        position: fixed;
+    }
+}
+h1{
+    text-align: center;
+   
+   font-size: 60px;
+}
+.row {
+    display: flex;
+
+}
+
+.box {
+    height: 400px;
+    background-color: black;
+    margin: 10px;
+    width: 33.3%;
+    background-size: cover;
+    transition: all 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+    text-align: center;
+    color: transparent;
+
+}
+
+.box:hover {
+
+    background-image: none;
+    color: aliceblue;
+   
+}
+
+ 
+.b1 {
+    background-image: url(https://th.bing.com/th/id/R.03deaf7c882009b82fb233de255206bb?rik=zUuF6q41Yld3AQ&pid=ImgRaw&r=0);
+   height: 300px;
+   width: 300px;
+}
+
+.b2 {
+    background-image: url(https://morningpicker.com/wp-content/uploads/2019/11/fix-instagram-app-windows-10.jpg);
+    height: 300px;
+    width: 300px;
+}
+
+.b3 {
+    background-image: url(https://play-lh.googleusercontent.com/wIf3HtczQDjHzHuu7vezhqNs0zXAG85F7VmP7nhsTxO3OHegrVXlqIh_DWBYi86FTIGk);
+    height: 300px;
+    width: 300px;
+}
+body{
+    background-color: rgba(144, 188, 238, 0.281);
+}
+.p{
+    color: rgb(154, 92, 255);
+    font-size: 20px;
+    text-align: center ;
+}

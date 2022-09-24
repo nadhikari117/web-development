@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(48, 253, 219, 0.281);
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    border: 2px solid white;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: rgb(165, 228, 237);
+}
+
+
+@media all and (max-width:600px) {
+    menu a {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+
+    menu {
+        background-color: black;
+        position: fixed;
+    }
+}
+body {
+    background-color: rgb(109, 168, 207);
+    
+    background-size: cover 50%;
+    color: white;
+} 
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <a href="attackontitan.html">Attack On Titan</a>
+
+        <a href="aot.html">Characters</a>
+
+        <a href="story.html">Storyline</a>
+
+</body>
+</html>

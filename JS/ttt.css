@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shippori Antique B1', sans-serif;
+    background-color: #D5D5D5;
+
+}
+
+section {
+    text-align: center;
+}
+
+.title {
+    font-size: 80px;
+    text-align: center;
+    color: #091353;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-color: #9D84B7;
+    margin: 10px auto;
+    width: 300px;
+}
+
+.cell {
+    height: 100px;
+    width: 100px;
+    background-color: #091353;
+    line-height: 100px;
+    box-shadow: 2px 2px 2px 2px cadetblue;
+    border: 2px solid cadetblue;
+    cursor: pointer;
+    font-size: 60px;
+    color: #D5D5D5;
+}
+
+.status {
+    font-size: 50px;
+    color: #091353;
+    margin: 20px auto;
+}
+
+.restart {
+    background-color: #D5D5D5;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: #091353;
+    box-shadow: 2px 2px 2px 2px cadetblue;
+    border: 2px solid cadetblue;
+
+}

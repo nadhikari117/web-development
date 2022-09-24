@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+        * {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        @keyframes hello{
+            0% {
+                transform: rotate(120deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: rgb(165, 228, 236);
+        }
+
+       
+
+        h1 {
+            text-align: center;
+            padding: 200px;
+            animation: hello 2s infinite;
+
+        }
+
+        body {
+            background-color: rgb(1, 158, 158);
+            color: white;
+        }
+
+        .row {
+            display: flex;
+
+        }
+
+        .box {
+            height: 400px;
+            background-color: black;
+            margin: 10px;
+            width: 33.3%;
+            background-size: cover;
+            transition: all 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5rem;
+            text-align: center;
+            color: transparent;
+
+        }
+
+        .box:hover {
+        
+            background-image: none;
+            color: aliceblue;
+        }
+
+        .b1 {
+            background-image: url(https://cdn.costumewall.com/wp-content/uploads/2018/09/sakura-haruno.jpg);
+            background-size: cover;
+        }
+
+        .b2 {
+            background-image: url(https://animenomi.b-cdn.net/wp-content/uploads/2021/01/hand-picked-naruto-uzumaki-anime-quotes-featured-image-1024x536.jpg);
+            background-size: cover;
+        }
+
+        .b3 {
+            background-image: url(https://www.anime-planet.com/images/characters/hinata-hyuuga-626.jpg?t=1264095422);
+            background-size: cover;
+        }
+
+        .b4 {
+            background-image: url(https://media.distractify.com/brand-img/vQClzyLLl/0x0/itachi-featured-1632854701914.png);
+            background-size: cover;
+        }
+
+        .b5 {
+            background-image: url(https://shogi-pineapple.com/wp-content/uploads/2021/08/1629447736_Russian-girl-brings-out-the-best-in-Tsunade-Senju-in.jpg);
+            background-size: cover;
+        }
+
+        .b6 {
+            background-image: url(https://www.looper.com/img/gallery/the-reason-you-almost-never-see-kakashis-face-in-naruto/intro-1576078504.jpg);
+            background-size: cover;
+        }
+
+        .b7 {
+            background-image: url(https://static1.srcdn.com/wordpress/wp-content/uploads/2019/12/Kurenai-Yuhi-In-Naruto-Shippuden.jpg);
+            background-size: cover;
+        }
+
+        .b8 {
+            background-image: url(https://www.anime-planet.com/images/characters/thumbs/531.jpg?t=1429317948);
+            background-size: cover;
+        }
+
+        .b9 {
+            background-image: url(https://i.ytimg.com/vi/fuXefXu5RaY/maxresdefault.jpg);
+            background-size: cover;
+        }
+        @media all and (max-width:990px) {
+            .menu {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .box {
+                width: 100%;
+            }
+            .row{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <h2 class="logo">Naruto</h2>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="">Contact</a>
+    </nav>
+    <h1>Our Gallery</h1>
+    <section class="container">
+        <div class="row">
+            <div class="box b1">
+                Sakura
+            </div>
+            <div class="box b2">
+                Naruto
+
+            </div>
+            <div class="box b3">
+                Hinata
+            </div>
+        </div>
+        <div class="row">
+            <div class="box b4">Pain</div>
+            <div class="box b5">Tsundene</div>
+            <div class="box b6">Kakashi</div>
+
+        </div>
+        <div class="row">
+            <div class="box b7">Itachi</div>
+            <div class="box b8">Sasuke</div>
+            <div class="box b9">Mabui</div>
+        </div>
+    </section>
+</body>
+
+</html>

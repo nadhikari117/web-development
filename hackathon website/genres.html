@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+        * {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(82, 163, 255, 0.281);
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+        .containers {
+            background-color: rgb(255, 255, 255)
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: rgb(138, 96, 255);
+        }
+
+        .rows {
+            display: flex;
+
+        }
+
+        .box {
+            height: 321px;
+            width: 205px;
+            background-color: rgb(109, 167, 172);
+            margin: 30px;
+            width: 28%;
+            background-size: cover;
+            transition: all 2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            text-align: center;
+            color: transparent;
+
+
+        }
+
+        .box:hover {
+
+            background-image: none;
+            color: aliceblue;
+
+        }
+
+        .b1 {
+            background-image: url(https://img1.ak.crunchyroll.com/i/spire3/dac363972d628a7009e04fdeb9d7104a1641869274_main.jpg);
+            background-size: cover;
+            margin-left: 10%;
+
+        }
+
+        .b2 {
+            background-image: url(https://image.api.playstation.com/cdn/UP0700/CUSA04897_00/9KyMrO6GjTtcrj1lC0aBENsrJroVszez.png);
+            background-size: cover;
+        }
+
+        .b3 {
+            background-image: url(https://i.pinimg.com/originals/9e/84/df/9e84dfb84672c2c7e5252e9c9118d2e7.png);
+            background-size: cover;
+
+        }
+
+        .b4 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BODcwNWE3OTMtMDc3MS00NDFjLWE1OTAtNDU3NjgxODMxY2UyXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+        .b5 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BZmQ5NGFiNWEtMmMyMC00MDdiLTg4YjktOGY5Yzc2MDUxMTE1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg);
+            background-size: cover;
+            margin-left: 10%;
+        }
+
+        .b6 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BMGMyOThiMGUtYmFmZi00YWM0LWJiM2QtZGMwM2Q2ODE4MzhhXkEyXkFqcGdeQXVyMjc2Nzg5OTQ@._V1_.jpg);
+            background-size: cover;
+        }
+
+        .b7 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/7/72/Bleachanime.png);
+            background-size: cover;
+        }
+
+        .b8 {
+            background-image: url(http://doublesama.com/wp-content/uploads/2019/11/Demon-Slayer-cover.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+        .b9 {
+            background-image: url(https://thegeekiary.com/wp-content/uploads/2020/03/fruits-basket-season-2.jpg);
+            background-size: cover;
+            margin-left: 10%;
+        }
+
+        .b10 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BYThlNWY5ZDgtYTIxNC00ZjdiLWJmNGUtMDFjMDlmZTAzOWFiXkEyXkFqcGdeQXVyNTM4NzAzNjc@._V1_FMjpg_UX1000_.jpg);
+            background-size: cover;
+        }
+
+        .b11 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BYmQ5Y2RiOTAtMzg2Ni00MzE0LWE0NTItNzExNmMzOGQyY2NjL2ltYWdlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg);
+            background-size: cover;
+            border: 2px;
+            border-color: black;
+        }
+
+        .b12 {
+            background-image: url(https://cdn.myanimelist.net/images/anime/4/80110.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+        .b13 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BZDI2MzAwMmItOTYwNy00ZDg4LTg0YzMtMzcwNjgwYTkwYTcyXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg);
+            background-size: cover;
+            margin-left: 10%;
+        }
+
+        .b14 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BMjU5OGIyM2EtOGViMi00Y2U5LWI0MDItYTM3MDNhOGMzNmE3XkEyXkFqcGdeQXVyNjkyMTU2NDM@._V1_.jpg);
+            background-size: cover;
+        }
+
+        .b15 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BZjU4YWFmZTEtOTNlNi00ODVjLTk2NTMtYTJjNzliMjUyZjRiXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg);
+            background-size: cover;
+
+        }
+
+        .b16 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BZDA3MjQ1OTYtYjY1Yi00NzBlLTg3YzYtNDNmNDU2MTE5ZDcwXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_FMjpg_UX1000_.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+
+
+
+        .b17 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/4/4a/Berserk_vol01.png);
+
+            background-size: cover;
+            margin-left: 10%;
+        }
+
+        .b18 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BMjUxMzE4ZDctODNjMS00MzIwLThjNDktODkwYjc5YWU0MDc0XkEyXkFqcGdeQXVyNjc3OTE4Nzk@._V1_.jpg);
+            background-size: cover;
+        }
+
+        .b19 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/5/51/Vinland_Saga_volume_01_cover.jpg);
+            background-size: cover;
+
+        }
+
+        .b20 {
+            background-image: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1173150557l/251912._SX318_.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+        .b21 {
+            background-image: url(https://images-na.ssl-images-amazon.com/images/I/91F15VTNFFL.jpg);
+
+            background-size: cover;
+            margin-left: 10%;
+        }
+
+        .b22 {
+            background-image: url(https://m.media-amazon.com/images/M/MV5BM2ZkYTAwMGMtOGEwOS00MzBjLTgxOGYtZTYwY2E1ZjMyZmY4XkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_.jpg);
+            background-size: cover;
+        }
+
+        .b23 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/a/a8/Kingdom_volume_1.jpg);
+            background-size: cover;
+
+        }
+
+        .b24 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Tokyo_Ghoul_volume_1_cover.jpg/220px-Tokyo_Ghoul_volume_1_cover.jpg);
+            background-size: cover;
+            margin-right: 10%;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: center;
+            padding: 40px 10px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: black;
+        }
+
+        .rows {
+            background-color: lightskyblue;
+        }
+        
+
+        h1 {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+
+            padding: 200px;
+            font-size: 55px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            color: antiquewhite;
+
+        }
+
+        h2 {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+        }
+        @media all and (max-width:990px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+    }
+    .rows{
+        flex-direction: column;
+    }
+}
+        body {
+            background-color: rgb(148, 140, 255);
+        }
+
+        p {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="showcase">
+        <nav class="menu">
+
+
+
+
+
+
+            <a href="#shounen">Shounen</a>
+            <a href="#shoujo">Shoujo</a>
+            <a href="#josei">Josei</a>
+            <a href="#seinen">Seinen</a>
+           
+
+
+        </nav>
+
+    </section>
+
+    <center>
+        <h1>Top Picks From Every Genre Only Here At AniManga Mania!</h1>
+    </center>
+
+    <section class="containers">
+        <br>
+        <br>
+        <br>
+        <h2 id="shounen">Shounen</h2>
+        <br>
+        <center>
+            <p> Shounen is a genre in anime and manga that typically has action, comedy, friendship, and has tragedy
+                occasionally.
+                Shounen anime are mostly targeted towards a young-teen male audience. Classic shounens include Naruto,
+                One Piece, Bleach, and more.
+            </p>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="rows">
+            <div class="box b1">
+                Witnessing the fullness of the Titan horror first-hand, a young and tenacious Eren Jaeger vows to rid
+                the world of all Titans and win back freedom for mankind.
+
+            </div>
+
+            <div class="box b2">
+                The story of the Joestar family, who are possessed with intense psychic strength, and the adventures
+                each member encounters throughout their lives.
+
+            </div>
+            <div class="box b3">
+                Gon Freecss aspires to become a Hunter, an exceptional being capable of greatness. With his friends and
+                his potential, he seeks for his father who left him when he was younger.
+            </div>
+            <div class="box b4">
+                The series focuses on Monkey D. Luffy, whom, inspired by his childhood idol, the powerful pirate
+                Red-Haired Shanks, sets off on a journey to find the mythical treasure, the One Piece, and proclaim
+                himself the King of the Pirates.
+
+            </div>
+
+            <br>
+
+
+        </div>
+
+
+        <div class="rows">
+            <div class="box b5">The story of Naruto Uzumaki, a young ninja who seeks recognition from his peers and
+                dreams of becoming the Hokage, the leader of his village.</div>
+            <div class="box b6">Follows the adventures of an extraordinarily strong young boy named Goku as he searches
+                for the seven dragon balls. Along the way he makes many new friends, and enemies, and he trains to
+                become the strongest fighter in the world.</div>
+            <div class="box b7">It follows the adventures of the hotheaded teenager Ichigo Kurosaki, who inherits his
+                parents' destiny after he obtains the powers of a Soul Reaper—a death personification similar to the
+                Grim Reaper—from another Soul Reaper, Rukia Kuchiki.</div>
+            <div class="box b8">Tanjiro Kamado's family is slaughtered and the only survivor, his sister, has turned
+                into a Demon. The young man embarks on a journey to seek out the Demon that killed their family, and
+                turn his sister back into a human.</div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h2 id="shoujo">Shoujo</h2>
+        <br>
+        <center>
+            <p>Shoujo is a genre of anime, and manga that sets young teenage girls as the target demographic. Shoujo
+                anime frequently focus on romance as a key plot element, is often set in a school setting or a fantasy
+                world, and typically features a female protagonist.</p>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="rows">
+            <div class="box b9">Tohru Honda, an orphan girl who, after meeting Yuki, Kyo, and Shigure Sohma, learns that
+                thirteen members of the Sohma family are possessed by the animals of the Chinese zodiac and are cursed
+                to turn into their animal forms if they embrace anyone of the opposite sex.</div>
+            <div class="box b10">Kousei Arima, a piano prodigy who lost his ability to play after suffering a traumatic
+                event in his childhood is forced back into the spotlight by an eccentric girl with a secret of her own.
+            </div>
+            <div class="box b11">Anohana tells the tale of five childhood companions who reunite when the ghost of their
+                dead friend appears, and demands they grant her final wish. </div>
+            <div class="box b12">Sixteen-year-old Naho Takamiya discovers a letter from herself from ten years into that
+                future that tells her to watch for a new transfer student, Kakeru Naruse, who will become one of her
+                friends.</div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2 id="josei">Josei</h2>
+        <br>
+        <center>
+            <p>Josei anime and manga, also known as ladies' comics, is an category of Japanese comics that emerged in
+                the 1980s. Josei refers to manga marketed to an audience of adult women, contrasting shoujo manga, which
+                is marketed to an audience of girls and young adult women.</p>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="rows">
+            <div class="box b13">The series is centered on Nana Osaki and Nana Komatsu, two women who move to Tokyo at
+                the age of 20, with the story focused on Nana O.'s pursuit for fame and Nana K.'s pursuit for romance,
+                all while struggling to maintain their friendship.</div>
+            <div class="box b14">The sports anime revolves around Japanese figure skater Yuri Katsuki, who is taken
+                under the wing of his role model Russian figure-skating champion, alongside young skating prodigy Yuri
+                Plitsetsky. </div>
+            <div class="box b15">The series depicts the lives and relationships of five students at a Tokyo art college,
+                four of whom live in the same apartment building.</div>
+            <div class="box b16">Yukari is a typical high-school student who listens to her parents and attends school
+                everyday. As she starts to question her way of life, she encounters some fashion students who have a
+                clothing label known as "Paradise Kiss".</div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2 id="seinen">Seinen</h2>
+        <br>
+        <center>
+            <p>Seinen anime and manga are shows and comics marketed towards young adult men, contrasting shounen anime,
+                which is directed towards younger boys. Seinen anime and manga tend to focus on action, politics,
+                science fiction, fantasy, relationships, sports, or comedy.</p>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="rows">
+            <div class="box b17">Set in a medieval dark fantasy world, the story centers on the characters of Guts, a
+                lone mercenary, and Griffith, the leader of a mercenary band called the "Band of the Hawk".</div>
+            <div class="box b18">A self-proclaimed mad scientist discovers an unusual series of events that only he has
+                witnessed, and with his childhood friend and a professional hacker, he reopens a device which he thinks
+                is a step closer into creating a real time machine.</div>
+            <div class="box b19">Thorfinn pursues a journey with his father's killer in order to take revenge and end
+                his life in a duel as an honorable warrior and pay his father a homage. </div>
+            <div class="box b20">Growing up in 17th century Sengoku era Japan, Shinmen Takezou is shunned by the local
+                villagers as a devil child. Running away from home at age 17, Takezou joins the army to fight the
+                Tokugawa clan at the battle of Sekigahara.</div>
+
+        </div>
+
+        <div class="rows">
+            <div class="box b21">Years after a schoolboy writes a book of prophecies, a mysterious super-villain uses it
+                as his master-plan of world destruction</div>
+            <div class="box b22">The story revolves around Kenzo Tenma, a Japanese surgeon whose life enters turmoil
+                after getting involved with Johan Liebert, one of his former patients, who is revealed to be a dangerous
+                serial killer</div>
+            <div class="box b23">Kingdom provides a fictionalized account of the Warring States period primarily through
+                the experiences of the war orphan Xin and his comrades as he fights to become the greatest general under
+                the heavens, and in doing so, unifying China for the first time in 500 years.</div>
+
+            <div class="box b24">A college student is attacked by a ghoul, a being that feeds on human flesh. He later
+                receives an organ transplant from the ghoul, becoming part monster himself.</div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">more</a></li>
+                        <li><a href="#">login</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">help center</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">mangas</a></li>
+                        <li><a href="#">posters</a></li>
+                        <li><a href="#">clothes</a></li>
+                        <li><a href="#">accesories</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+
+                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

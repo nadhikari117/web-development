@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 40px 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+    top: 0;
+    justify-content: space-around;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+
+}
+ h1{
+            text-align: center;
+            padding: 200px;}
+
+            body{
+                background-color: black;
+                color: white;
+            }
+            .container{
+                display: flex;
+            }
+
+        .box{
+width: 33.3%;
+height: 400px;
+background-color: black;
+display: inline;
+        }
+
+
+.menu a:hover {
+    color: black;
+}
+@media all and (max-width:600px) {
+            .menu a {
+                display: block;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <h2 class="logo">Naruto</h2>
+        <a href="home.html"></a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="">Contact</a> 
+        </nav>
+        <h1>Our Gallery</h1>
+        <section class="container">
+            <div class="row">
+                <div class="box b1"></div>
+                <div class="box b2"></div>
+                <div class="box b3"></div>
+            </div>
+           
+            <div class="row">
+            <div class="box b4"></div>
+            <div class="box b5"></div>
+            <div class="box b6"></div>
+           </div>
+           <div class="row">
+           <div class="box b7"></div>
+           <div class="box b8"></div>
+           <div class="box b9"></div>
+        </div>
+        </section>
+        
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+body{
+ background-color: aquamarine;
+background-size: cover;
+background-position: center center;
+}
+#drum-cont{
+height: 100vh;
+}
+.key{
+    border: 2px solid black;
+    border-radius: 16px;
+    margin: 5px;
+    width: 100px;
+    text-align: center;
+    padding: 0 10px;
+    background-color: white;
+    transition: all .07s;
+}
+.playing{
+    box-shadow: 0px 0px 30px yellow;
+    transform: scale(1.1);
+
+}

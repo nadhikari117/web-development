@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+    position: fixed;
+    top:0;
+    right:0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+@media all and (max-width:990px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+.menu a:hover {
+    color: black;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+form{
+    padding-bottom: 20%;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.s1 {
+          height: 800px;
+          background-image: url(https://wallpaperaccess.com/full/2313304.jpg);
+          background-image: fixed;
+          display: flex;
+          justify-content: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          align-items: center;
+          background-attachment: fixed;
+      }
+
+      .text {
+
+text-align: center;
+}
+
+.text h1 {
+color: white;
+font-size: 5em;
+text-decoration: dotted;
+}
+
+.text h2 {
+color: white;
+}
+
+.text a {
+
+border: 2px solid white;
+padding: 7px;
+text-decoration: none;
+color: black;
+}
+p{
+    color: white;
+    font-size: 1.2rem;
+}
+
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.containers {    
+  border-radius: 5px;    
+  background-color: #f2f2f2;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+/* Clear floats after the columns */    
+.rows:after {    
+  content: "";    
+  display: table;    
+  clear: both;  
+}
+
+h5{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#jump{
+color: white;
+font-weight: bolder;
+}
+    </style>
+</head>
+<body>
+    <section class="showcase">
+        <nav class="menu">
+          <a href="index.html"><h2 class="logo">Animanga Mania</h2></a>
+            <a href="os.html">Our Selections</a>
+            <a href="genres.html">Genres</a>
+            <a href="ab.html">About Us</a>
+            <a href="fb.html">Feedback</a>
+            <a href="ct.html">Contact</a>
+
+        </nav>
+       
+    </section>
+    <section class="s1">
+        <img src="">
+  
+        <div class="text">
+            <h1>Give Us Feedback!</h1>
+   
+            
+            <br>
+            <p>fill out a quick feeback form below:</p>
+            <br>
+            <br>
+            <a href="" id="jump">JUMP TO FORM</a>
+        </div>
+       
+        
+      </section>
+      <br>
+      <br>
+      <br>
+      
+      <br>
+  
+      <h5 >Feedback Form:</h5>
+<br>
+<br>
+
+<br>
+      <form>    
+        <div class="rows">    
+          <div class="col-25">    
+            <label for="fname">First Name</label>    
+          </div>    
+          <div class="col-75">    
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+          </div>    
+        </div>    
+        <div class="rows">    
+          <div class="col-25">    
+            <label for="lname">Last Name</label>    
+          </div>    
+          <div class="col-75">    
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+          </div>    
+        </div>    
+        <div class="rows">    
+            <div class="col-25">    
+              <label for="email">Username</label>    
+            </div>    
+            <div class="col-75">    
+              <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+            </div>    
+          </div>    
+        <div class="rows">    
+          <div class="col-25">    
+            <label for="country">Country</label>    
+          </div>    
+          <div class="col-75">    
+            <select id="country" name="country">    
+                <option value="none">Select Country</option>    
+              <option value="australia">Australia</option>    
+              <option value="canada">Canada</option>    
+              <option value="usa">USA</option>    
+              <option value="russia">Russia</option>    
+              <option value="japan">Japan</option>    
+              <option value="india">India</option>    
+              <option value="china">China</option>    
+            </select>    
+          </div>    
+        </div>    
+        <div class="rows">    
+          <div class="col-25">    
+            <label for="feed_back">Feedback</label>    
+          </div>    
+          <div class="col-75">    
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+          </div>    
+        </div>    
+        <div class="rows">    
+          <input type="submit" value="Submit">    
+        </div>    
+      </form>    
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">more</a></li>
+                        <li><a href="#">login</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">help center</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">mangas</a></li>
+                        <li><a href="#">posters</a></li>
+                        <li><a href="#">clothes</a></li>
+                        <li><a href="#">accesories</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+
+                
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
